@@ -129,6 +129,20 @@ if tup.2 != tup.remark {
     print(UniCo2[UniCo2.characters.endIndex.predecessor()],terminator:"")
 }
 
+var(index,value,remark) = tup
+
+index = 30
+
+tup.index
+
+var vari: Int = 300
+
+var tup2: (Int,Double,String) = (vari,3.1514926,"Hello Swift")
+
+vari = 400
+
+tup2.0
+
 
 
 
