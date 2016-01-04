@@ -114,6 +114,23 @@ UniCo2.hasPrefix("K")
 
 UniCo2.hasSuffix("$")
 
+//:Tuple
+
+let tup = (index: 12,value: true,remark: "tuple")
+
+tup.1
+
+tup.index
+tup.remark
+
+if tup.2 != tup.remark {
+    print("\(tup.value)",terminator:"")
+}else{
+    print(UniCo2[UniCo2.characters.endIndex.predecessor()],terminator:"")
+}
+
+
+
 
 
 
