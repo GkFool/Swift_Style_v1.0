@@ -42,16 +42,77 @@ num4 = Double(num1) + Double(num2)
 
 
 
-//
+//: String 字符串
+
+let unMutAble: String = ""
+
+let unMutAble2: String = String()
+
+var mutAble = "Hello World"
+
+let unMutAble3 = mutAble
+
+print(unMutAble3,terminator:"")
+
+
+for char in mutAble.characters{
+    print(char,terminator:"")
+}
+
+var uniChars:[Character] = ["H","E","L","L","O"]
+
+let uniChar = String(uniChars) + " " + mutAble
+
+//: String interpolation
+
+
+var interP = 20
+
+var result = mutAble + "  \(interP*11)"
+
+var UniCo = "\u{0301}"
+
+
+UniCo.characters.count
+
+
+var UniCo2 = "K"+"\u{01F4}"
+
+UniCo2.characters.count
 
 
 
+UniCo2.startIndex
+UniCo2.endIndex
 
 
+UniCo2[UniCo2.endIndex.predecessor()]
+
+UniCo2[UniCo2.startIndex]
+
+UniCo2.insert("$", atIndex: UniCo2.endIndex)
+UniCo2.insertContentsOf("IN".characters, at: UniCo2.startIndex.advancedBy(1))
+
+UniCo2.removeRange(UniCo2.startIndex.advancedBy(2) ..< UniCo2.endIndex)
 
 
+for codeunit in UniCo.utf8{
+    print("\(codeunit)",terminator:"")
+}
 
 
+for codeunit in UniCo.utf16{
+    print("\(codeunit)",terminator:"")
+}
+
+for codeunit in UniCo.unicodeScalars{
+    print("\(codeunit)",terminator:"")
+}
+
+
+UniCo2.hasPrefix("K")
+
+UniCo2.hasSuffix("$")
 
 
 
