@@ -143,9 +143,37 @@ vari = 400
 
 tup2.0
 
-print("Hello World!",terminator:"")
+//: basic operators
 
-tup2.dynamicType
+let a = 20
+var b = 50
+
+b = b + a
+
+b = b * a
+
+b++
+
+++b
+
+var c = b++
+
+b
+
+var d = ++b
+
+var isInt = b > 50
+
+var outPut = isInt && !isInt ? "True" : "False"
+
+
+for vIndex in 0..<4 {
+    print(vIndex)
+}
+
+
+
+
 
 
 
