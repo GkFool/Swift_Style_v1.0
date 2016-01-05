@@ -143,6 +143,11 @@ vari = 400
 
 tup2.0
 
+print("Hello World!",terminator:"")
+
+tup2.dynamicType
+
+
 
 
 
